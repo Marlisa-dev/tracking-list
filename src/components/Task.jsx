@@ -4,13 +4,17 @@ import { RiCheckboxBlankCircleLine, RiCheckboxBlankCircleFill } from "react-icon
 
 {/* <RiCheckboxBlankCircleLine /> */}
 {/* <RiCheckboxBlankCircleFill /> */}
-const Task = ({ item }) => {
+const Task = ({ item, setTodos }) => {
+  const handleDelete = () => {
+    setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== item.id))
+  }
+
   return (
     <li className='task' id={item.id}>
         <RiCheckboxBlankCircleLine className='checked'/>
         <p>{item.title}</p>
         <FaEdit className='edit-task-icon'/>
-        <FaTrashAlt className='delete-task-icon'/>       
+        <FaTrashAlt className='delete-task-icon' onClick={handleDelete}/>       
     </li>
   )
 }
