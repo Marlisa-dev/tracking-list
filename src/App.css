@@ -1,0 +1,110 @@
+*{
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* body{
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+.header{
+  padding: 0.8rem 2rem;
+}
+.container{
+  width: 400px;
+  /* border: 1px solid blue; */
+  height: 500px;
+  border-radius: 6px;
+  margin: 5rem auto;
+}
+
+/* Task Tracker Component */
+.tasktracker{
+  border: 1px solid rgb(238, 226, 159);
+  border-radius: 10px;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.tasktracker h3{
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+.tasktracker  p{
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+
+.tasktracker div:last-child{
+  background-color: rgb(42, 228, 42);
+  height:100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  text-align: center;
+}
+
+
+
+.tasksbody{
+  margin-top: 20px;
+  padding-left: 0px;
+
+}
+/* New Task Component */
+.form{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.form input{
+  width: 340px;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+  background-color: rgb(15, 26, 48);
+}
+.add{
+  background-color: rgb(42, 228, 42);
+  color: black;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 28px;
+  cursor: pointer;
+  border: none;
+}
+
+.task{
+  border: 0.5px solid rgb(238, 226, 159);
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 8px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.task p{
+  /* background-color: blue; */
+  width: 75%;
+}
+.edit-task-icon,
+.delete-task-icon{
+  font-size: 24px;
+  margin-top: 12px;
+}
+.checked{
+  font-size: 25px;
+  margin-top: 12px;
+  /* margin-left: 7px; */
+}
+.delete-task-icon{
+  margin-left: 4px;
+}
