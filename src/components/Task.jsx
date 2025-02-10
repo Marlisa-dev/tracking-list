@@ -8,7 +8,7 @@ const Task = ({ item }) => {
   return (
     <li className='task' id={item.id}>
         <RiCheckboxBlankCircleLine className='checked'/>
-        <p>New list item</p>
+        <p>{item.title}</p>
         <FaEdit className='edit-task-icon'/>
         <FaTrashAlt className='delete-task-icon'/>       
     </li>
