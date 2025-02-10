@@ -1,8 +1,17 @@
 import React from 'react'
 
-const NewTask = () => {
+const NewTask = ({setTodos}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
+    const value = e.target.todo.value;
+    setTodos((prevTodos) => [
+      ...prevTodos,
+      {
+        title: value,
+        id: self.crypto.randomUUID(),
+        is_completed: false
+      },
+    ])
     e.target.reset();
   }
   return (
