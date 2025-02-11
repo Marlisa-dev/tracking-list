@@ -62,7 +62,8 @@
   justify-content: space-between;
   margin-top: 20px;
 }
-.form input{
+.form input,
+.edit-form input{
   width: 340px;
   height: 42px;
   border: none;
@@ -70,6 +71,9 @@
   padding-left: 10px;
   font-size: 16px;
   outline: none;
+  
+}
+.form input{
   background-color: rgb(15, 26, 48);
 }
 .add{
@@ -95,6 +99,8 @@
   /* background-color: blue; */
   width: 75%;
 }
+
+
 .edit-task-icon,
 .delete-task-icon{
   font-size: 24px;
