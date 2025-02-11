@@ -1,7 +1,6 @@
 import React from 'react'
 import Task from './Task'
 
-
 const TasksBody = ({ todos, setTodos, handleCompleteTask }) => {
   return (
     <ol className='tasksbody'>

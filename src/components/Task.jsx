@@ -31,9 +31,11 @@ const Task = ({ item, setTodos, handleCompleteTask }) => {
     e.preventDefault();
     setEditing(false);
   };
+
   const handleInputBlur = () => {
     setEditing(false);
   };
+  
   const handleInputChange = (e) => {
     setTodos((prevTodos) =>
       prevTodos.map((todo) =>
